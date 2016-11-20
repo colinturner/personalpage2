@@ -9,7 +9,7 @@ body {
 
 .wrapper {
     width: 100%;
-    max-width: 860px;
+    max-width: 960px;
     margin: 0 auto;
 }
 
@@ -70,6 +70,7 @@ nav ul.social li{
     background: #ccc;
     text-align: center;
     font-size: 40px;
+    box-shadow: 6px 6px 3px #888888;
 }
 
 #blocks{
@@ -96,10 +97,11 @@ img {
     margin-bottom: 20px;
 }
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 980px){
 
     nav ul{
         display: flex;
+        align-items: center;
     }
 
     nav li{
@@ -124,7 +126,7 @@ img {
     }
 
     #first{
-    min-width: 349px;
+    min-width: 394px;
 }
 
     article{

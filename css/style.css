@@ -46,6 +46,10 @@ a.fb{
     background-size: 80%;
 }
 
+img.blocks{
+    background-size: 50%;
+}
+
 .social a{
     text-indent: -10000px;
 }
@@ -108,16 +112,16 @@ article h2 {
         margin: 0;
     }
 
-    /*#blocks{
+    #blocks{
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-    }*/
+    }
 
-    /*article{
+    article{
         flex: 0 1 32%;
     }
-*/
+
 }
 
 

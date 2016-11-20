@@ -46,10 +46,6 @@ a.fb{
     background-size: 80%;
 }
 
-img.blocks{
-    background-size: 50%;
-}
-
 .social a{
     text-indent: -10000px;
 }
@@ -85,12 +81,19 @@ article{
     margin-bottom: 20px;
     padding: 10px;
     box-sizing: border-box;
+    border-radius: 5%;
 }
 
 article h2 {
     text-align: center;
     font-size: 20px;
     margin: 10px 0;
+}
+
+img {
+    border-radius: 15%;
+    width: 100%;
+    margin-bottom: 20px;
 }
 
 @media screen and (min-width: 768px){
@@ -112,14 +115,25 @@ article h2 {
         margin: 0;
     }
 
+
     #blocks{
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+        margin-bottom: 20px;
     }
+
+    #first{
+    min-width: 349px;
+}
 
     article{
         flex: 0 1 32%;
+        margin-bottom: 20px;
+    }
+
+    span{
+        flex: 0 1 55%;
     }
 
 }
@@ -132,18 +146,12 @@ article h2 {
 }
 
 .box {
-    height: 50px;
-    flex: 0 0 100px;
+    height: 40px;
+    flex: 0 0 80px;
 }
 
 .one {
-    background: red;
+    background: #333;
+    flex-grow: 50
 }
-
-.two {
-    background: blue;
 }
-
-.three {
-    background: green;
-

@@ -10,6 +10,11 @@ body {
     background: gold;
 }
 
+table tr{
+    border: 1px solid;
+    vertical-align: top;
+}
+
 .wrapper {
     width: 100%;
     max-width: 960px;
@@ -27,11 +32,16 @@ nav ul {
     padding: 0;
 }
 
+nav li {
+    font-family: Libre Franklin;
+}
+
 nav a{
     text-decoration: none;
     text-align: center;
     color: #fff;
     display: block;
+    border-radius: 20%;
     padding: 10px;
 }
 
@@ -80,7 +90,9 @@ nav ul.social li{
 
 .green_bold{
     color: #027220;
+    font-family: Arvo, serif;
     font-weight: bold;
+    font-size: 22px;
 }
 
 .blocks{

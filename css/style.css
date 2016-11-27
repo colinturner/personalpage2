@@ -60,12 +60,12 @@ nav  a:hover{
     background-color: #555;
 }
 
-a.tw{
+a.twitter{
     background: url(../img/tw.png) no-repeat center;
     background-size: 80%;
 }
 
-a.fb{
+a.facebook{
     background: url(../img/fb.png) no-repeat center;
     background-size: 80%;
 }

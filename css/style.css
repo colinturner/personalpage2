@@ -128,9 +128,17 @@ article h2 {
 
 img {
     border-radius: 15%;
+    filter: grayscale(100%);
+    transition: 0.4s ease-in-out;
     width: 100%;
     margin-bottom: 20px;
 }
+
+img:hover {
+    filter: grayscale(0);
+}
+
+
 
 @media screen and (min-width: 982px){
 

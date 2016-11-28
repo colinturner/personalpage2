@@ -99,11 +99,68 @@ nav ul.social li{
     font-weight: bold;
 }
 
+#specialred {
+    color: #027220;
+    font-family: Arvo, serif;
+    font-weight: bold;
+    font-size: 22px;
+    opacity: 0;
+    animation: fadeIn 1s forwards,
+    changeColour 1s forwards 5.5s;
+}
+
+#londonred {
+    animation: fadeIn 1s forwards 4.5s,
+    blackToRed 1s forwards 5.5s
+}
+
+@keyframes blackToRed {
+    0% {color: black}
+    100% {color:red}
+}
+
+@keyframes changeColour {
+    0% {color: green}
+    100% {color: red}
+}
+
 .green_bold{
     color: #027220;
     font-family: Arvo, serif;
     font-weight: bold;
     font-size: 22px;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0}
+    100% {opacity: 1}
+}
+
+td p {
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+.table1 {
+    animation-delay: 0.5s;
+}
+
+.table2 {
+    animation-delay: 1.5s;
+}
+
+.table3 {
+    animation-delay: 2.5s;
+}
+
+.table4 {
+    animation-delay: 3.5s;
+}
+
+.table5 {
+    animation-delay: 4.5s;
 }
 
 .blocks{

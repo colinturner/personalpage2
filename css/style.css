@@ -103,6 +103,11 @@ nav ul.social li{
     font-weight: bold;
 }
 
+.imptext {
+    color: blue;
+    font-weight: bold
+}
+
 #specialred {
     color: #027220;
     font-family: Arvo, serif;

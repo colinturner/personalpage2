@@ -145,13 +145,55 @@ nav ul.social li{
 }
 
 .boldBlue {
+    opacity: 0;
     font-weight: bold;
     color: blue;
+    animation: fadeIn 1s forwards 6.5s;
 }
 
-.secondlist {
+#bb1 {
+    animation-delay: 6.5s
+}
+
+#bb2 {
+    animation-delay: 7s
+}
+
+#bb3 {
+    animation-delay: 7.5s
+}
+
+#bb4 {
+    animation-delay: 8s
+}
+
+#bb5 {
+    animation-delay: 8.5s
+}
+
+#bb6 {
+    animation-delay: 9s
+}
+
+#bb7 {
+    animation-delay: 9.5s
+}
+
+#bb8 {
+    animation-delay: 10s
+}
+
+#bb9 {
+    animation-delay: 10.5s
+}
+
+#bb10 {
+    animation-delay: 11s;
+}
+
+.secondList {
     opacity: 0;
-    animation: fadeIn 1s forwards 6.5s;
+    animation: fadeIn 1s forwards 12s;
 }
 
 

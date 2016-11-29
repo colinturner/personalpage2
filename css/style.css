@@ -22,7 +22,16 @@ p{
 }
 
 body {
-    background: #90b9f9;
+    /*background: #90b9f9;*/
+    background: black;
+    animation: backgroundFade 9.5s forwards 5.5s;
+}
+
+@keyframes backgroundFade {
+    0% {background: black}
+    10.526% {background: #eee}
+    68.421% {background: #eee}
+    100% {background: #90b9f9}
 }
 
 table tr{

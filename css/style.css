@@ -29,9 +29,9 @@ body {
 
 @keyframes backgroundFade {
     0% {background: black}
-    10.526% {background: #eee}
-    68.421% {background: #eee}
-    100% {background: #90b9f9}
+    10.526% {background: red}
+    68.421% {background: red}
+    100% {background: #eee/*#90b9f9*/}
 }
 
 table tr{

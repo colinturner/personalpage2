@@ -144,6 +144,11 @@ nav ul.social li{
     100% {opacity: 1}
 }
 
+.secondlist {
+    opacity: 0;
+    animation: fadeIn 1s forwards 6.5s;
+}
+
 td p {
     opacity: 0;
     animation: fadeIn 1s forwards;

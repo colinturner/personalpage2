@@ -266,7 +266,8 @@ img {
     border-radius: 15%;
     filter: grayscale(100%);
     /*transition: 0.4s ease-in-out;*/
-    animation: grayIn 0.4s forwards 12s;
+    animation: grayIn 3s forwards 12s,
+    borderRadJump 3s forwards 12s cubic-bezier(.14,1.82,.83,.93);
     width: 100%;
     margin-bottom: 20px;
 }
@@ -274,6 +275,12 @@ img {
 @keyframes grayIn {
     0% {filter: grayscale(100%)}
     100% {filter: grayscale(0%)}
+}
+
+@keyframes borderRadJump {
+    0% {border-radius: 15%}
+    50% {border-radius: 50%;}
+    100% {border-radius: 0}
 }
 
 /*img:hover {

@@ -265,14 +265,20 @@ article h2 {
 img {
     border-radius: 15%;
     filter: grayscale(100%);
-    transition: 0.4s ease-in-out;
+    /*transition: 0.4s ease-in-out;*/
+    animation: grayIn 0.4s forwards 12s;
     width: 100%;
     margin-bottom: 20px;
 }
 
-img:hover {
-    filter: grayscale(0);
+@keyframes grayIn {
+    0% {filter: grayscale(100%)}
+    100% {filter: grayscale(0%)}
 }
+
+/*img:hover {
+    filter: grayscale(0);
+}*/
 
 
 

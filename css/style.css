@@ -58,6 +58,7 @@ nav ul {
 
 nav li {
     font-family: Arvo, serif;
+    font-size: 17px;
 }
 
 nav a{
@@ -359,5 +360,4 @@ img {
 .one {
     background: #333;
     flex-grow: 50
-}
 }

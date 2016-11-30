@@ -1,7 +1,8 @@
+/*Gives all elements a margin of zero by default*/
 *{
     margin: 0;
 }
-
+/*Style the paragraph elements*/
 p{
     font-family: Roboto;
     font-size: 17px;
@@ -10,25 +11,25 @@ p{
 .about_me_header {
     font-size: 31px;
 }
-
+/*Style "App 1", "App 2" and "App 3"*/
 .apptitles{
     text-align: center;
     font-family: Cabin Sketch;
     color: navy;
     font-size: 60px;
 }
-
+/*Places the Alaska image where I want it on the page, using flexbox commands*/
 .image_position{
     vertical-align: middle;
 }
-
+/*Initializes the background to be black but then proceeds with animation to change that*/
 body {
-    /*background: #90b9f9;*/
     background: black;
     -webkit-animation: backgroundFade 9.5s forwards 5.5s;
             animation: backgroundFade 9.5s forwards 5.5s;
 }
-
+/*I calculated the precise percentages at which key frames should be reached in order to coordinate the
+changing colours and texts appearing*/
 @-webkit-keyframes backgroundFade {
     0% {background: black}
     10.526% {background: red}
@@ -48,6 +49,7 @@ table tr{
     vertical-align: top;
 }
 
+/*This sets the width of the wrapper class, which defines how much of the screen's width will be displayed content*/
 .wrapper {
     width: 100%;
     max-width: 960px;
@@ -55,7 +57,7 @@ table tr{
 }
 
 
-
+/*The following blocks style the navbar*/
 nav {
     background: #333;
 }
@@ -82,7 +84,7 @@ nav a{
 nav  a:hover{
     background-color: #555;
 }
-
+/*Styling the social media icon links in the navbar*/
 a.twitter{
     background: url(../img/tw.png) no-repeat center;
     background-size: 80%;
@@ -135,7 +137,7 @@ nav ul.social li{
     color: blue;
     font-weight: bold
 }
-
+/*This styles the number "2016" in the About Me section. It needs to change from green to red*/
 #specialred {
     color: #027220;
     font-family: Roboto;
@@ -147,7 +149,7 @@ nav ul.social li{
             animation: fadeIn 1s forwards,
     changeColour 1s forwards 5.5s;
 }
-
+/*This styles the text next to the number "2016" and changes it from black to red at the same time as above*/
 #londonred {
     -webkit-animation: fadeIn 1s forwards 4.5s,
     blackToRed 1s forwards 5.5s,
@@ -156,7 +158,7 @@ nav ul.social li{
     blackToRed 1s forwards 5.5s,
     toBold 1s forwards 5.5s
 }
-
+/*These are the change-to-red text keyframes*/
 @-webkit-keyframes toBold {
     0% {font-weight: normal}
     100% {font-weight: bold}
@@ -196,7 +198,7 @@ nav ul.social li{
     -webkit-animation: fadeIn 1s forwards;
             animation: fadeIn 1s forwards;
 }
-
+/*I have lots of text fading in. This keyframe dictates that behaviour*/
 @-webkit-keyframes fadeIn {
     0% {opacity: 0}
     100% {opacity: 1}
@@ -206,7 +208,7 @@ nav ul.social li{
     0% {opacity: 0}
     100% {opacity: 1}
 }
-
+/*Specifies how certain text should be bold and blue*/
 .boldBlue {
     font-family: Roboto;
     opacity: 0;
@@ -215,7 +217,7 @@ nav ul.social li{
     -webkit-animation: fadeIn 1s forwards 6.5s;
             animation: fadeIn 1s forwards 6.5s;
 }
-
+/*These bb ID's specify how long each bb tagged element should wait before proceeding with its fade-in animation*/
 #bb1 {
     -webkit-animation-delay: 6.5s;
             animation-delay: 6.5s
@@ -265,7 +267,7 @@ nav ul.social li{
     -webkit-animation-delay: 11s;
             animation-delay: 11s;
 }
-
+/*This secondList class also specifies when certain text should fade in to view*/
 .secondList {
     font-family: Roboto;
     opacity: 0;
@@ -275,13 +277,13 @@ nav ul.social li{
 
 
 
-
+/*This block controls paragraph elements inside the table*/
 td p {
     opacity: 0;
     -webkit-animation: fadeIn 1s forwards;
             animation: fadeIn 1s forwards;
 }
-
+/*These numbered table elements specify when each element should fade in to view according to its class*/
 .table1 {
     -webkit-animation-delay: 0.5s;
             animation-delay: 0.5s;
@@ -326,7 +328,7 @@ article h2 {
     font-family: Playfair Display;
     color: maroon;
 }
-
+/*This block controls the grayscale and shape-shifting animations for the Alaska image*/
 img {
     border-radius: 15%;
     -webkit-filter: grayscale(100%);
@@ -339,7 +341,7 @@ img {
     width: 100%;
     margin-bottom: 20px;
 }
-
+/*These are the keyframes for the shift in degree of grayscale*/
 @-webkit-keyframes grayIn {
     0% {-webkit-filter: grayscale(100%);filter: grayscale(100%)}
     100% {-webkit-filter: grayscale(0%);filter: grayscale(0%)}
@@ -349,7 +351,7 @@ img {
     0% {-webkit-filter: grayscale(100%);filter: grayscale(100%)}
     100% {-webkit-filter: grayscale(0%);filter: grayscale(0%)}
 }
-
+/*These are the three-step keyframes that specify how the border radius of the Alaska image changes*/
 @-webkit-keyframes borderRadJump {
     0% {border-radius: 15%}
     50% {border-radius: 50%;}
@@ -362,14 +364,10 @@ img {
     100% {border-radius: 0}
 }
 
-/*img:hover {
-    filter: grayscale(0);
-}*/
 
-
-
+/*This media query specifies that the CSS blocks below it take over at the critical width of 982px*/
 @media screen and (min-width: 982px){
-
+/*These next CSS blocks mean that the navbar will display differently on mobile views*/
     nav ul{
         display: -webkit-box;
         display: -webkit-flex;
@@ -456,7 +454,7 @@ img {
 
 }
 
-
+/*This is my flexbox container! It specifies how the elements contained within it shall be laid out on the page*/
 .flex-container {
     display: -webkit-box;
     display: -webkit-flex;
@@ -469,7 +467,7 @@ img {
         -ms-flex-flow: row;
             flex-flow: row;
 }
-
+/*The "box" class and "one" class control the aesthetic box placed at the very bottom of my page*/
 .box {
     height: 40px;
     -webkit-box-flex: 0;

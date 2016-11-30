@@ -163,6 +163,7 @@ nav ul.social li{
 }
 
 .boldBlue {
+    font-family: Arvo, serif;
     opacity: 0;
     font-weight: bold;
     color: blue;
@@ -210,6 +211,7 @@ nav ul.social li{
 }
 
 .secondList {
+    font-family: Arvo, serif;
     opacity: 0;
     animation: fadeIn 3s forwards 12s;
 }

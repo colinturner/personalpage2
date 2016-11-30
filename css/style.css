@@ -3,7 +3,7 @@
 }
 
 p{
-    font-family: Arvo, serif;
+    font-family: Roboto;
 }
 
 .about_me_header {
@@ -57,7 +57,7 @@ nav ul {
 }
 
 nav li {
-    font-family: Arvo, serif;
+    font-family: Roboto;
     font-size: 17px;
 }
 
@@ -120,7 +120,7 @@ nav ul.social li{
 
 #specialred {
     color: #027220;
-    font-family: Arvo, serif;
+    font-family: Roboto;
     font-weight: bold;
     font-size: 22px;
     opacity: 0;
@@ -151,7 +151,7 @@ nav ul.social li{
 
 .green_bold{
     color: #027220;
-    font-family: Arvo, serif;
+    font-family: Roboto;
     font-weight: bold;
     font-size: 22px;
     opacity: 0;
@@ -164,7 +164,7 @@ nav ul.social li{
 }
 
 .boldBlue {
-    font-family: Arvo, serif;
+    font-family: Roboto;
     opacity: 0;
     font-weight: bold;
     color: blue;
@@ -212,7 +212,7 @@ nav ul.social li{
 }
 
 .secondList {
-    font-family: Arvo, serif;
+    font-family: Roboto;
     opacity: 0;
     animation: fadeIn 3s forwards 12s;
 }
@@ -301,7 +301,7 @@ img {
 
     nav li{
         flex: 1 1 0;
-        font-family: Arvo, serif;
+        font-family: Roboto;
     }
 
     nav {
@@ -328,7 +328,7 @@ img {
     }
 
     #first ul {
-        font-family: Arvo, serif;
+        font-family: Roboto;
     }
 
     article{
